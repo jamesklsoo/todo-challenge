@@ -1,0 +1,7 @@
+console
+db:create
+db:drop
+db:migrate
+db:seed
+db:version
+spec

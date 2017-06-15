@@ -1,4 +1,4 @@
-require_relative 'config/application'
+require_relative '../../config/application.rb'
 
 class Tasks < ActiveRecord::Migration[4.2]
   def change
