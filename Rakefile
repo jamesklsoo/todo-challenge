@@ -2,6 +2,8 @@ require 'rake'
 require 'rspec/core/rake_task'
 
 require_relative 'config/application'
+require_relative 'app/models/task'
+require_relative 'todo'
 
 desc "create the database"
 task "db:create" do

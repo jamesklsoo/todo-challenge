@@ -2,6 +2,7 @@ require 'pathname'
 require 'sqlite3'
 require 'active_record'
 require 'logger'
+require 'byebug'
 
 # Declaring constants
 APP_ROOT = Pathname.new(File.expand_path(File.join(File.dirname(__FILE__), '..')))
@@ -17,4 +18,4 @@ Dir[APP_ROOT.join('app', 'models', '*.rb')].each { |file| require file }
 
 # Establish database connection
 ActiveRecord::Base.establish_connection :adapter  => 'sqlite3',
-                                        :database => DB_PATH
+  :database => DB_PATH
